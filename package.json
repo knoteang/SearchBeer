@@ -13,7 +13,7 @@
     "http-server": "^0.10.0"
   },
   "scripts": {
-    "transpile": "browserify js/index.js -o build/main.bundle.js -t [babelify --presets es2015]",
+    "transpile": "babel --presets es2015 js/index.js -o build/main.bundle.js",
     "start": "http-server"
   },
   "repository": {
